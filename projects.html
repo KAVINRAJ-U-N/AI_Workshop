@@ -35,52 +35,73 @@
     <main>
         <section>
             <h1>My Projects</h1>
-            <div class="projects-grid">
+            <div class="slider-container">
+                <div class="slider-wrapper">
 
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>A personal portfolio website built with pure HTML and CSS to showcase skills and projects.
-                        </p>
-                        <div class="tech-stack">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>Flexbox</span>
+                    <div class="project-card slide">
+                        <img src="assets/images/portfolio-preview.png" alt="Portfolio Website" class="project-img">
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>A personal portfolio website built with pure HTML and CSS to showcase skills and
+                                projects.
+                            </p>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Flexbox</span>
+                            </div>
+                            <br>
+                            <a href="#" class="btn">View Project</a>
                         </div>
-                        <br>
-                        <a href="#" class="btn">View Project</a>
                     </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>E-commerce Landing Page</h3>
-                        <p>A responsive landing page for an online store featuring product grids and promotional
-                            banners.</p>
-                        <div class="tech-stack">
-                            <span>HTML5</span>
-                            <span>CSS Grid</span>
-                            <span>Responsive</span>
+                    <div class="project-card slide">
+                        <img src="https://exploreembedded.com/wiki/images/5/5f/0_Joystick_with_Arduino_bb.png"
+                            alt="E-commerce Landing Page" class="project-img">
+                        <div class="project-content">
+                            <h3>Microcontroller based Joystick</h3>
+                            <p>A joystick controller developed using a microcontroller enables precise directional and
+                                motion control.
+                                It is widely used in gaming, robotics, and interactive applications for smooth user
+                                input.</p>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS Grid</span>
+                                <span>Responsive</span>
+                            </div>
+                            <br>
+                            <a href="#" class="btn">View Project</a>
                         </div>
-                        <br>
-                        <a href="#" class="btn">View Project</a>
                     </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Blog Template</h3>
-                        <p>A clean, minimal blog layout focused on typography and readability.</p>
-                        <div class="tech-stack">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
+                    <div class="project-card slide">
+                        <img src="https://m.media-amazon.com/images/I/61T8Y7tU72L._AC_UF1000,1000_QL80_.jpg"
+                            alt="Blog Template" class="project-img">
+                        <div class="project-content">
+                            <h3>Sound transfer using LIFI</h3>
+                            <p>Li-Fi technology enables sound data to be transmitted using visible light instead of
+                                radio waves.
+                                Audio signals are encoded into light intensity variations and received by a
+                                photodetector for playback.</p>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                            </div>
+                            <br>
+                            <a href="#" class="btn">View Project</a>
                         </div>
-                        <br>
-                        <a href="#" class="btn">View Project</a>
                     </div>
-                </div>
 
+                </div>
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
             </div>
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <script src="js/script.js"></script>
         </section>
     </main>
 
